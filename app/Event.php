@@ -33,7 +33,17 @@ class Event extends Model
 
     public function comments ()
     {
-        return $this->hasMany('App\Comment');
+        return $this->hasMany('App\Comment','event_com');
+    }
+
+    public function annonces ()
+    {
+        return $this->hasMany('App\Comment','annonces');
+    }
+
+    public function signalisations ()
+    {
+        return $this->hasMany('App\Comment','signalisations');
     }
 
     public function roles ()

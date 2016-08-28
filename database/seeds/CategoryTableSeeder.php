@@ -11,6 +11,12 @@ class CategoryTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+        DB::table('categories')->insert([
+           ['name'=>'Theatre'],
+           ['name'=>'Danse'],
+           ['name'=>'Arts du Cirque'],
+           ['name'=>'Musique'],
+           ['name'=>'Autres'],
+        ]);
     }
 }

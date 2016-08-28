@@ -18,7 +18,7 @@ class CreateEventsTable extends Migration
             $table->unsignedInteger('category_id')->nullable();
             $table->unsignedInteger('institution_id')->nullable();
             $table->string('title',255);
-            $table->text('description');
+            $table->text('abstract');
             $table->text('content');
             $table->string('image',100);
             $table->dateTime('date');

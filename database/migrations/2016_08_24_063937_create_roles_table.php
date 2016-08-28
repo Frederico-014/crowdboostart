@@ -14,7 +14,9 @@ class CreateRolesTable extends Migration
     {
         Schema::create('roles', function (Blueprint $table) {
             $table->increments('id');
-            $table->enum('name',['booster','follower','creator'])->default('follower');
+            $table->string('name',255);
+            $table->text('description');
+            $table->dateTime('date');
             $table->timestamps();
         });
     }

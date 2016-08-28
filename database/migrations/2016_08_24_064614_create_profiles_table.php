@@ -15,7 +15,7 @@ class CreateProfilesTable extends Migration
         Schema::create('profiles', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-            $table->enum('categories',['administrative','materiel','technique']);
+            $table->enum('categories',['administrative','comunication','materiel','technique']);
             $table->timestamps();
         });
     }
