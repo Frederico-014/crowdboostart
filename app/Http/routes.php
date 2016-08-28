@@ -11,6 +11,15 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::pattern('id','[1-9][0-9]');
+
+Route::get('/','FrontCrontroller@index');
+
+Route::get('/booster','FrontCrontroller@newUser');
+
+Route::get('/creator','FrontCrontroller@newUser');
+
+
+Route::any('login', 'LoginController@login');
+
+Route::get('logout', 'LoginController@logout');
