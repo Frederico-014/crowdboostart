@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DATABASE</ID>
+  <OriginalElement>f1f2143c-bf0a-4421-9817-024cce3170d3</OriginalElement>
+  <nodes>
+    <node x="2222.472222222222" y="1388.0">f1f2143c-bf0a-4421-9817-024cce3170d3.TABLE:db_crowboostart.medias</node>
+    <node x="2000.4398148148148" y="733.0">f1f2143c-bf0a-4421-9817-024cce3170d3.TABLE:db_crowboostart.events</node>
+    <node x="666.6805555555554" y="1454.5">f1f2143c-bf0a-4421-9817-024cce3170d3.TABLE:db_crowboostart.event_user_role</node>
+    <node x="1089.9953703703704" y="0.0">f1f2143c-bf0a-4421-9817-024cce3170d3.TABLE:db_crowboostart.users</node>
+    <node x="2729.722222222222" y="887.0">f1f2143c-bf0a-4421-9817-024cce3170d3.TABLE:db_crowboostart.tags</node>
+    <node x="2628.472222222222" y="1476.5">f1f2143c-bf0a-4421-9817-024cce3170d3.TABLE:db_crowboostart.event_tag</node>
+    <node x="2458.6805555555557" y="176.0">f1f2143c-bf0a-4421-9817-024cce3170d3.TABLE:db_crowboostart.categories</node>
+    <node x="476.75" y="865.0">f1f2143c-bf0a-4421-9817-024cce3170d3.TABLE:db_crowboostart.roles</node>
+    <node x="1856.4722222222222" y="1432.0">f1f2143c-bf0a-4421-9817-024cce3170d3.TABLE:db_crowboostart.signalisations</node>
+    <node x="1471.6805555555554" y="1432.0">f1f2143c-bf0a-4421-9817-024cce3170d3.TABLE:db_crowboostart.event_com</node>
+    <node x="0.0" y="1754.0">f1f2143c-bf0a-4421-9817-024cce3170d3.TABLE:db_crowboostart.password_resets</node>
+    <node x="91.75" y="953.5">f1f2143c-bf0a-4421-9817-024cce3170d3.TABLE:db_crowboostart.user_profile</node>
+    <node x="367.0" y="1754.0">f1f2143c-bf0a-4421-9817-024cce3170d3.TABLE:db_crowboostart.migrations</node>
+    <node x="1085.6805555555554" y="1410.0">f1f2143c-bf0a-4421-9817-024cce3170d3.TABLE:db_crowboostart.annonces</node>
+    <node x="2032.6805555555554" y="154.0">f1f2143c-bf0a-4421-9817-024cce3170d3.TABLE:db_crowboostart.institutions</node>
+    <node x="0.0" y="198.0">f1f2143c-bf0a-4421-9817-024cce3170d3.TABLE:db_crowboostart.profiles</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="f1f2143c-bf0a-4421-9817-024cce3170d3.TABLE:db_crowboostart.event_com" target="f1f2143c-bf0a-4421-9817-024cce3170d3.TABLE:db_crowboostart.events">
+      <point x="86.5" y="-116.5" />
+      <point x="1731.1805555555554" y="1358.0" />
+      <point x="2211.2731481481483" y="1358.0" />
+      <point x="-42.166666666666515" y="292.5" />
+    </edge>
+    <edge source="f1f2143c-bf0a-4421-9817-024cce3170d3.TABLE:db_crowboostart.event_tag" target="f1f2143c-bf0a-4421-9817-024cce3170d3.TABLE:db_crowboostart.events">
+      <point x="-94.75" y="-72.0" />
+      <point x="2723.222222222222" y="1368.0" />
+      <point x="2464.2731481481483" y="1368.0" />
+      <point x="210.83333333333348" y="292.5" />
+    </edge>
+    <edge source="f1f2143c-bf0a-4421-9817-024cce3170d3.TABLE:db_crowboostart.event_user_role" target="f1f2143c-bf0a-4421-9817-024cce3170d3.TABLE:db_crowboostart.users">
+      <point x="0.0" y="-94.0" />
+      <point x="866.1805555555554" y="1368.0" />
+      <point x="873.2499999999999" y="1368.0" />
+      <point x="873.2499999999999" y="703.0" />
+      <point x="1226.4953703703704" y="703.0" />
+      <point x="-136.5" y="336.5" />
+    </edge>
+    <edge source="f1f2143c-bf0a-4421-9817-024cce3170d3.TABLE:db_crowboostart.events" target="f1f2143c-bf0a-4421-9817-024cce3170d3.TABLE:db_crowboostart.categories">
+      <point x="168.66666666666652" y="-292.5" />
+      <point x="2422.1064814814813" y="713.0" />
+      <point x="2651.6805555555557" y="713.0" />
+      <point x="0.0" y="160.5" />
+    </edge>
+    <edge source="f1f2143c-bf0a-4421-9817-024cce3170d3.TABLE:db_crowboostart.signalisations" target="f1f2143c-bf0a-4421-9817-024cce3170d3.TABLE:db_crowboostart.events">
+      <point x="86.5" y="-116.5" />
+      <point x="2115.972222222222" y="1368.0" />
+      <point x="2295.6064814814813" y="1368.0" />
+      <point x="42.166666666666515" y="292.5" />
+    </edge>
+    <edge source="f1f2143c-bf0a-4421-9817-024cce3170d3.TABLE:db_crowboostart.user_profile" target="f1f2143c-bf0a-4421-9817-024cce3170d3.TABLE:db_crowboostart.users">
+      <point x="91.25" y="-72.0" />
+      <point x="365.5" y="693.0" />
+      <point x="1135.4953703703704" y="693.0" />
+      <point x="-227.5" y="336.5" />
+    </edge>
+    <edge source="f1f2143c-bf0a-4421-9817-024cce3170d3.TABLE:db_crowboostart.signalisations" target="f1f2143c-bf0a-4421-9817-024cce3170d3.TABLE:db_crowboostart.users">
+      <point x="-86.5" y="-116.5" />
+      <point x="1942.9722222222222" y="703.0" />
+      <point x="1499.4953703703704" y="703.0" />
+      <point x="136.5" y="336.5" />
+    </edge>
+    <edge source="f1f2143c-bf0a-4421-9817-024cce3170d3.TABLE:db_crowboostart.events" target="f1f2143c-bf0a-4421-9817-024cce3170d3.TABLE:db_crowboostart.users">
+      <point x="-168.66666666666652" y="-292.5" />
+      <point x="2084.7731481481483" y="693.0" />
+      <point x="1590.4953703703704" y="693.0" />
+      <point x="227.5" y="336.5" />
+    </edge>
+    <edge source="f1f2143c-bf0a-4421-9817-024cce3170d3.TABLE:db_crowboostart.annonces" target="f1f2143c-bf0a-4421-9817-024cce3170d3.TABLE:db_crowboostart.events">
+      <point x="91.5" y="-138.5" />
+      <point x="1360.1805555555554" y="1348.0" />
+      <point x="2126.939814814815" y="1348.0" />
+      <point x="-126.5" y="292.5" />
+    </edge>
+    <edge source="f1f2143c-bf0a-4421-9817-024cce3170d3.TABLE:db_crowboostart.event_user_role" target="f1f2143c-bf0a-4421-9817-024cce3170d3.TABLE:db_crowboostart.roles">
+      <point x="-133.0" y="-94.0" />
+      <point x="733.1805555555554" y="1368.0" />
+      <point x="669.75" y="1368.0" />
+      <point x="0.0" y="160.5" />
+    </edge>
+    <edge source="f1f2143c-bf0a-4421-9817-024cce3170d3.TABLE:db_crowboostart.annonces" target="f1f2143c-bf0a-4421-9817-024cce3170d3.TABLE:db_crowboostart.users">
+      <point x="-91.5" y="-138.5" />
+      <point x="1177.1805555555554" y="713.0" />
+      <point x="1317.4953703703704" y="713.0" />
+      <point x="-45.5" y="336.5" />
+    </edge>
+    <edge source="f1f2143c-bf0a-4421-9817-024cce3170d3.TABLE:db_crowboostart.events" target="f1f2143c-bf0a-4421-9817-024cce3170d3.TABLE:db_crowboostart.institutions">
+      <point x="0.0" y="-292.5" />
+      <point x="2253.439814814815" y="713.0" />
+      <point x="2235.6805555555557" y="713.0" />
+      <point x="0.0" y="182.5" />
+    </edge>
+    <edge source="f1f2143c-bf0a-4421-9817-024cce3170d3.TABLE:db_crowboostart.event_tag" target="f1f2143c-bf0a-4421-9817-024cce3170d3.TABLE:db_crowboostart.tags">
+      <point x="94.75" y="-72.0" />
+      <point x="0.0" y="138.5" />
+    </edge>
+    <edge source="f1f2143c-bf0a-4421-9817-024cce3170d3.TABLE:db_crowboostart.event_user_role" target="f1f2143c-bf0a-4421-9817-024cce3170d3.TABLE:db_crowboostart.events">
+      <point x="133.0" y="-94.0" />
+      <point x="999.1805555555554" y="1338.0" />
+      <point x="2042.6064814814818" y="1338.0" />
+      <point x="-210.83333333333326" y="292.5" />
+    </edge>
+    <edge source="f1f2143c-bf0a-4421-9817-024cce3170d3.TABLE:db_crowboostart.user_profile" target="f1f2143c-bf0a-4421-9817-024cce3170d3.TABLE:db_crowboostart.profiles">
+      <point x="-91.25" y="-72.0" />
+      <point x="0.0" y="138.5" />
+    </edge>
+    <edge source="f1f2143c-bf0a-4421-9817-024cce3170d3.TABLE:db_crowboostart.medias" target="f1f2143c-bf0a-4421-9817-024cce3170d3.TABLE:db_crowboostart.events">
+      <point x="0.0" y="-160.5" />
+      <point x="2415.472222222222" y="1368.0" />
+      <point x="2379.939814814815" y="1368.0" />
+      <point x="126.5" y="292.5" />
+    </edge>
+    <edge source="f1f2143c-bf0a-4421-9817-024cce3170d3.TABLE:db_crowboostart.event_com" target="f1f2143c-bf0a-4421-9817-024cce3170d3.TABLE:db_crowboostart.users">
+      <point x="-86.5" y="-116.5" />
+      <point x="1558.1805555555554" y="713.0" />
+      <point x="1408.4953703703704" y="713.0" />
+      <point x="45.5" y="336.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.3893453145057766" x="2342.6673260797893" y="970.9999999999995" />
+  <SelectedNodes>
+    <node>f1f2143c-bf0a-4421-9817-024cce3170d3.TABLE:db_crowboostart.profiles</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Key columns</Category>
+    <Category>Columns</Category>
+  </Categories>
+</Diagram>
+

@@ -12,7 +12,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'surname','firstname','username', 'email', 'password','bio',
     ];
 
     /**
@@ -31,7 +31,7 @@ class User extends Authenticatable
 
     public function profiles()
     {
-        return $this->belongsToMany('App\Profile');
+        return $this->belongsToMany('App\Profile','user_profile');
     }
 
     public function event ()
@@ -54,4 +54,15 @@ class User extends Authenticatable
         return $this->hasMany('App\Event','event_user_role');
     }
 
+    public function isProfiles($id)
+    {
+        foreach ($this->profiles as $profile)
+        {
+            if($this->id == $id)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
 }

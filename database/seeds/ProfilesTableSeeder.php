@@ -12,17 +12,26 @@ class ProfilesTableSeeder extends Seeder
     public function run()
     {
         DB::table('profiles')->insert([
-            ['name'=>'Contrats cession','categories'=>'administrative'],
-            ['name'=>'Budget','categories'=>'administrative'],
-            ['name'=>'Comunity Management','categories'=>'comunication'],
-            ['name'=>'Conseil Image','categories'=>'comunication'],
-            ['name'=>'Relation publique','categories'=>'comunication'],
-            ['name'=>'Son','categories'=>'materiel'],
-            ['name'=>'Lumiere','categories'=>'materiel'],
-            ['name'=>'Video','categories'=>'materiel'],
+            ['name'=>'Budget previsionel','categories'=>'administrative'],
+            ['name'=>'Charges social','categories'=>'administrative'],
+            ['name'=>'Contrat de travail','categories'=>'administrative'],
+            ['name'=>'Contrat de cession','categories'=>'administrative'],
+            ['name'=>'Contrat de coproduction','categories'=>'administrative'],
+            ['name'=>'Correction de textes','categories'=>'comunication'],
+            ['name'=>'Traduction de texte','categories'=>'comunication'],
+            ['name'=>'Infographie','categories'=>'comunication'],
+            ['name'=>'Site Internet','categories'=>'comunication'],
+            ['name'=>'Réseaux sociaux','categories'=>'comunication'],
+            ['name'=>'Accueil public','categories'=>'relationelle'],
+            ['name'=>'Mise en contact professionels','categories'=>'relationelle'],
+            ['name'=>'Diffusion evenements','categories'=>'relationelles'],
+            ['name'=>'Diffusion campagne de finacement','categories'=>'relationelle'],
+            ['name'=>'Scenographie','categories'=>'technique'],
             ['name'=>'Costume','categories'=>'technique'],
-            ['name'=>'Maquillage','categories'=>'technique'],
-            ['name'=>'Decor','categories'=>'technique'],
+            ['name'=>'Lumiere','categories'=>'technique'],
+            ['name'=>'Son','categories'=>'technique'],
+            ['name'=>'Video','categories'=>'technique'],
+            ['name'=>'Photo','categories'=>'technique'],
 
         ]);
     }

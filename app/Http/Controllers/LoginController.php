@@ -26,7 +26,7 @@ class LoginController extends Controller
 
                 Auth::user()->status='online';
                 Auth::user()->save();
-                return redirect('/')->with(['message'=>'Login Succes']);
+                return redirect('/');
             }
             else
             {
@@ -41,6 +41,6 @@ class LoginController extends Controller
         Auth::user()->save();
         Auth::logout();
 
-        return redirect('/')->with(['message'=>'succes logout']);
+        return redirect('/');
     }
 }

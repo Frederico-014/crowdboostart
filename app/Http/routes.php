@@ -11,15 +11,42 @@
 |
 */
 
-Route::pattern('id','[1-9][0-9]');
+Route::pattern('id','[1-9][0-9]*');
 
-Route::get('/','FrontCrontroller@index');
+Route::get('/','FrontController@index');
 
-Route::get('/booster','FrontCrontroller@newUser');
+Route::get('annonces','FrontController@annonces');
 
-Route::get('/creator','FrontCrontroller@newUser');
+Route::get('booster','FrontController@newUser');
+
+Route::post('inscription', 'FrontController@createUser');
+
+Route::get('creator','FrontController@newUser');
+
+
+Route::get('event','FrontController@newEvent');
+
+Route::post('event','FrontController@createEvent');
+
+Route::any('search', 'FrontController@search');
+
+Route::get('show/{id}','FrontController@showEvent');
+
+Route::get('discovery','FrontController@discovery');
+
+Route::get('discovery/category/{id}','FrontController@showEventByCategory');
+
+Route::get('discovery/tag/{id}','FrontController@showEventByTag');
 
 
 Route::any('login', 'LoginController@login');
 
 Route::get('logout', 'LoginController@logout');
+
+
+Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
+    Route::resource('event', 'EventController');
+    Route::resource('user', 'UserController');
+    Route::resource('institution', 'InstitutionController');
+
+});

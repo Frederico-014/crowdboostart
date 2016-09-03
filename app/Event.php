@@ -2,10 +2,13 @@
 
 namespace App;
 
+use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 
 class Event extends Model
 {
+    protected $fillable =['user_id','category_id','title','abstract','image',];
+
     public function category()
     {
         return $this->belongsTo('App\Category');
@@ -54,5 +57,31 @@ class Event extends Model
     public function users ()
     {
         return $this->hasMany('App\User', 'event_user_role');
+    }
+
+    public function getDateAttribute ($value)
+    {
+        return Carbon::parse($value)->format('d-m-Y');
+    }
+
+    public function isTag($id)
+    {
+        foreach ($this->tags as $tag)
+        {
+            if($this->id == $id)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public function scopesearch($query, $word)
+    {
+        return $query   ->whereHas('tags',function ($q)use ($word){
+            $q->where('name','like','%'.$word.'%');
+        })
+            ->orWhere('title','like','%'.$word.'%');
+
     }
 }
