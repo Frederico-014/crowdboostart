@@ -25,13 +25,13 @@
             </button>
             <a class="navbar-brand" href="{{url('')}}"> <img src="{{url('assets',['images','crowboostart','menu','slider','logo-menu.png'])}}" alt="logo"></a>
         </div>
-        <div id="navbar" class="collapse navbar-collapse p_left">
-            <ul class="nav navbar-nav menu">
+        <div id="navbar" class="collapse navbar-collapse ">
+            <ul class="nav navbar-nav menu p_left">
                 <li {!! Request::url() == url('concept')? 'class="active_perso"' : '' !!}><a href="{{url('concept')}}"><img src="{{url('assets',['images','crowboostart','menu','Picto-concept.png'])}}" alt="concept">Le
                         Concept</a></li>
                 <li {!! Request::url() == url('discovery')? 'class="active_perso"' : '' !!}><a href="{{url('discovery')}}"><img src="{{url('assets',['images','crowboostart','menu','Picto-voir-les-projets.png'])}}" alt="les projets">Voir
                         les projet</a></li>
-                <li {!! Request::url() == url('creator')? 'class="active_perso"' : '' !!}><a href="{{url('creator')}}"><img src="{{url('assets',['images','crowboostart','menu','Picto-lancer-un-projet.png'])}}" alt="lancer un projet">Lancer
+                <li {!! Request::url() == url('creator')? 'class="active_perso"' : '' !!}><a href="{{url('concept')}}"><img src="{{url('assets',['images','crowboostart','menu','Picto-lancer-un-projet.png'])}}" alt="lancer un projet">Lancer
                         un projet</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right menu">

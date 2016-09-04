@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
-class InstitutionCrontroller extends Controller
+class EventController extends Controller
 {
     /**
      * Display a listing of the resource.

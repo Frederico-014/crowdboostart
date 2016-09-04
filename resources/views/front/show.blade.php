@@ -2,6 +2,10 @@
 @section('content')
     <div class="container2">
         <div class="w73 vtop">
+            @if(Auth::user())
+                <p class="w80 bg_advise"><img src="{{url('assets',['images','crowboostart','ppp-logue','projet','picto-attention.png'])}}" alt="attention">Attention, vous n'avez rien posté depuis une semaine</p><!--
+                    --><p class="w20 advise"><a href="#">Conseil</a></p>
+            @endif
             <div class="bgcwhite">
                 <div class="p10">
                     <h2 class="title_event">{{$event->title}}</h2>
@@ -16,6 +20,7 @@
                         --><li><a href="#"><img src="{{url('assets',['images','crowboostart','ppp','onglets','picto-booster.png'])}}" alt="boosters">{{rand(50,500)}} Booster</a></li>
                     </ul>
                     <img class="center" src="{{url('assets',['images',$event->image])}}" alt="event_image">
+                    <p class="black">{{$event->content}}</p>
                 </div>
             </div>
         </div><!--

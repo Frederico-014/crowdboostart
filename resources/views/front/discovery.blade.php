@@ -1,12 +1,14 @@
 @extends('layout.master')
 @section('content')
     <div class="container">
-    <h2>
-        @forelse($categories as $id=>$name)
-            <a href="{{url('discovery/category',$id)}}">{{$name}}</a>
-        @empty
-        @endforelse
-    </h2>
+        <nav>
+        <ul class="nav nav-tabs">
+            @forelse($categories as $id=>$name)
+            <li id="w20" role="presentation"{!! Request::url() == url('discovery/category',$id)? 'class="active"' : '' !!}><a href="{{url('discovery/category',$id)}}">{{$name}}</a></li>
+            @empty
+            @endforelse
+            </ul>
+        </nav>
     @forelse ($events as $event )
         <div class="w33 vtop">
             <div class="bgcwhite">
@@ -42,5 +44,8 @@
         </div>
     @empty
     @endforelse
+        <div>
+            {!!$events->render()!!}
+        </div>
     </div>
 @endsection

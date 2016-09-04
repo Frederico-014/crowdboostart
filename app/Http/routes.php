@@ -15,6 +15,8 @@ Route::pattern('id','[1-9][0-9]*');
 
 Route::get('/','FrontController@index');
 
+Route::get('/concept','FrontController@concept');
+
 Route::get('annonces','FrontController@annonces');
 
 Route::get('booster','FrontController@newUser');

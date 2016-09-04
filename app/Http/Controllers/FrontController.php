@@ -22,6 +22,10 @@ class FrontController extends Controller
         return view('front.index', compact('events'));
     }
 
+    public function concept(){
+        return view('front.concept');
+    }
+
     public function annonces()
     {
         $categories=Category::lists('name','id');
