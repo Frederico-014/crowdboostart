@@ -101,7 +101,7 @@ class FrontController extends Controller
             return view('front.new',compact('categories','user'));
         }
         if ($request->type == 'booster'){
-            return view('');
+            return view('auth.login');
         }
     }
 

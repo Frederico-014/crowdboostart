@@ -2,8 +2,13 @@
 @section('content')
     <div class="container">
         <div class="bgcwhite shadow m_bottom">
-            <h2 class="title_cp">Comment ça marche ?</h2>
-            <p class="text_cp">Crowdboostart est une plateforme de crowboosting spécialisée dans le soutien au spectacle vivant.</p>
+            <div class="w15 vmiddle" >
+                <img src="{{url('assets',['images','crowboostart','concept','concept.png'])}}" alt="picto-annonces">
+            </div><!--
+            --><div class="w85 vmiddle">
+                <h2 class="title_annonces">Comment ça marche ?</h2>
+                <p class="subtitle_annonces">Crowdvoostart est une plateforme de crowboosting spécialisée dans le soutien au spectacle vivant</p>
+            </div>
         </div>
         <div class="w60 vtop">
             <div class="bgcwhite">

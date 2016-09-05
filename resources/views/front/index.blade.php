@@ -68,15 +68,15 @@
     <div class="w38 vtop">
         <div class="c1">
             <h3 class="titlecontact title38">Un projet, une idée, un besoin, nous vous écoutons </h3>
-            <p class="p20"><button type="submit" class="btn btn-default contact_us">CONTACTER NOUS</button></p>
+            <p class="p15"><button type="submit" class="btn btn-default contact_us">CONTACTER NOUS</button></p>
         </div>
     </div><!--
     --><div class="w27 vtop">
         <div class="c2">
             <h3 class="titlecontact title27">Nous suivre <span class="span">Restez connectés</span></h3>
-            <img class="w33" src="{{url('assets',['images','crowboostart','page_home','reseauxsociaux','instagram.png'])}}" alt="instagram"><!--
-            --><img class="w33" src="{{url('assets',['images','crowboostart','page_home','reseauxsociaux','twitter.png'])}}" alt="twitter"><!--
-            --><img class="w33" src="{{url('assets',['images','crowboostart','page_home','reseauxsociaux','facebook.png'])}}" alt="facebook">
+            <img class="i33" src="{{url('assets',['images','crowboostart','page_home','reseauxsociaux','instagram.png'])}}" alt="instagram"><!--
+            --><img class="i33" src="{{url('assets',['images','crowboostart','page_home','reseauxsociaux','twitter.png'])}}" alt="twitter"><!--
+            --><img class="i33" src="{{url('assets',['images','crowboostart','page_home','reseauxsociaux','facebook.png'])}}" alt="facebook">
         </div>
     </div><!--
     --><div class="w35 vtop">
@@ -84,8 +84,8 @@
             <h3 class="titlecontact title35">La Newsletter Crowdboostart <span class="span">Restez connecté à la communauté</span></h3>
             <form class="navbar-form mail_newsletter" action="#" method="post">
                 {{csrf_field()}}
-                <div class="form-group">
-                    <input type="email" class="form-control" placeholder="VOTRE E-MAIL"><!--
+                <div class="form-group w100">
+                    <input type="email" class="form-control w70" placeholder="VOTRE E-MAIL"><!--
                     --><button type="submit" class="btn btn-default envoi">Envoi</button>
                 </div>
             </form>

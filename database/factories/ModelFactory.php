@@ -24,8 +24,8 @@ $factory->define(App\Event::class, function (Faker\Generator $faker) {
     return [
         'category_id'   => rand(1,5),
         'user_id'       =>1,
-        'title'         => $faker->text(50),
-        'abstract'      => $faker->text(100),
+        'title'         => $faker->text(25),
+        'abstract'      => $faker->text(50),
         'content'       => $faker->text(1000),
     ];
 });

@@ -14,7 +14,7 @@ class EventTableSeeder extends Seeder
         DB::table('events')->insert([
             'title'=>'Arat',
             'abstract'=>'Art nous invite à realiser un voyage singulier et magique',
-            'image'=>'Cieapartetre.jpg',
+            'image'=>'Aratflamencos.jpg',
             'user_id'=>6,
             'category_id'=>2,
         ]);

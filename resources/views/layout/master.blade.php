@@ -43,7 +43,7 @@
                     <li class="cred"><a href="#"><img src="{{url('assets',['images','crowboostart','ppp-logue','menu','picto-notifications.png'])}}" alt="notification"></a></li>
                     <li class="dropdown cred">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                           aria-expanded="false"><img src="{{url('assets',['images','crowboostart','ppp-logue','menu','picto-profil.png'])}}" alt="profil"><span class="caret"></span></a>
+                           aria-expanded="false"><img src="{{url('assets',['images','crowboostart','ppp-logue','menu','picto-profil.png'])}}" alt="profil"></a>
                         <ul class="dropdown-menu">
                             @if(Auth::user() && Auth::user()->isAdmin())
                                 <li><a href="#">Administration du site</a></li>
@@ -73,17 +73,17 @@
                 <li><a href="#">L'EQUIPE</a></li><!--
                 --><li><a href="#">CONDITION GENERALES</a></li><!--
                 --><li><a href="#">MENTION LEGALES</a></li><!--
-                --><li><a href="#">PRESS</a></li><!--
+                --><li><a href="#">PRESSE</a></li><!--
                 --><li><a href="#">CONTACT</a></li>
             </ul>
         </div>
         <div>
             <ul class="ul_footer2">
-                <li class="black">NOS PARTENAIRES</li>
-                <li><a href="#"><img src="{{url('assets',['images','crowboostart','footer','logopoitou.jpg'])}}" alt="logopoitou"></a></li>
-                <li><img src="{{url('assets',['images','crowboostart','footer','logobpi.jpg'])}}" alt="logobpi"></li>
-                <li><img src="{{url('assets',['images','crowboostart','footer','logo-Poitou-Charentes_logoRegion.png'])}}" alt="logo-Poitou-Charentes_logoRegion"></li>
-                <li><img src="{{url('assets',['images','crowboostart','footer','logo-ministere-de-la-culture.jpg'])}}" alt="logo-ministere-de-la-culture"></li>
+                <li class="black">NOS PARTENAIRES</li><!--
+                --><li><a href="#"><img src="{{url('assets',['images','crowboostart','footer','logopoitou.jpg'])}}" alt="logopoitou"></a></li><!--
+                --><li><img src="{{url('assets',['images','crowboostart','footer','logobpi.jpg'])}}" alt="logobpi"></li><!--
+                --><li><img src="{{url('assets',['images','crowboostart','footer','logo-Poitou-Charentes_logoRegion.png'])}}" alt="logo-Poitou-Charentes_logoRegion"></li><!--
+                --><li><img src="{{url('assets',['images','crowboostart','footer','logo-ministere-de-la-culture.jpg'])}}" alt="logo-ministere-de-la-culture"></li>
             </ul>
         </div>
     </div>

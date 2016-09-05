@@ -17,9 +17,9 @@
             <p><a href="#"><img class="pg_annonces" src="{{url('assets',['images','crowboostart','page_annonces','annonces','Pages.jpg'])}}" alt="pagination"></a></p>
         </div><!--
         --><div class="w27 vtop">
-            <div class="p_aside shadow">
+            <div class="p_aside">
                 <div class="bgcwhite shadow">
-                    <img src="{{url('assets',['images','crowboostart','page_annonces','annonces','picto-recherche-annonces.png'])}}" alt="recherche-annonces">
+                    <div class="ptop"><img src="{{url('assets',['images','crowboostart','page_annonces','annonces','picto-recherche-annonces.png'])}}" alt="recherche-annonces"></div>
                     <h3 class="title_aside">Annonces</h3>
                     <ul class="list_aside">
                         <li>
@@ -28,7 +28,7 @@
                                     <div class="input-group col-md-12">
                                         <input type="text" class="form-control search_annonces" placeholder="Rechercher par projet" />
                                         <span class="input-group-btn">
-                                             <button class="btn btn-info" type="button">
+                                             <button class="btn" type="button">
                                                 <i class="glyphicon glyphicon-search"></i>
                                             </button>
                                         </span>
@@ -41,20 +41,20 @@
             </div>
             <div class="p_aside">
                 <div class="bgcwhite shadow">
-                    <img src="{{url('assets',['images','crowboostart','page_annonces','annonces','picto-recherche-par-competence.png'])}}" alt="recherche-competences">
-                    <h3 class="title_aside">Recherhe par competence</h3>
+                    <div class="ptop"><img src="{{url('assets',['images','crowboostart','page_annonces','annonces','picto-recherche-par-competence.png'])}}" alt="recherche-competences"></div>
+                    <h3 class="title_aside">Recherche par competences</h3>
                     <ul class="list_aside">
                         <li><a href="#">Communication</a></li>
                         <li><a href="#">Administratif</a></li>
                         <li><a href="#">Spectacle</a></li>
-                        <li><a href="#">Prêt de matérie</a>l</li>
+                        <li><a href="#">Prêt de matériel</a></li>
                     </ul>
                 </div>
             </div>
             <div class="p_aside">
                 <div class="bgcwhite shadow">
-                    <img src="{{url('assets',['images','crowboostart','page_annonces','annonces','picto-recherche-par-domaine-artistique.png'])}}" alt="recherche-domaine">
-                    <h3 class="title_aside">Recherhe par Domaines</h3>
+                    <div class="ptop"><img src="{{url('assets',['images','crowboostart','page_annonces','annonces','picto-recherche-par-domaine-artistique.png'])}}" alt="recherche-domaine"></div>
+                    <h3 class="title_aside">Recherche par Domaines</h3>
                     <ul class="list_aside">
                         @forelse($categories as $id=>$name)
                             <li><a href="#">{{$name}}</a></li>

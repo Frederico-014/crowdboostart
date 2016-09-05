@@ -26,7 +26,11 @@ class LoginController extends Controller
 
                 Auth::user()->status='online';
                 Auth::user()->save();
-                return redirect('/');
+                if (Auth::user()->id == 2) {
+                    return redirect('/show/3');
+                }else {
+                    return redirect('/');
+                }
             }
             else
             {
