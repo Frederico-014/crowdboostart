@@ -46,6 +46,10 @@ label {
   text-align: center;
 }
 
+.t_left{
+  text-align: left;
+}
+
 .navbar-default {
   background-color: transparent;
   border-color: transparent;
@@ -53,7 +57,6 @@ label {
 
 .navbar-default .navbar-nav > .active > a {
   background-color: transparent;
-  color: #fff;
 }
 
 .nav-tabs {
@@ -61,7 +64,7 @@ label {
 }
 
 .nav-tabs > li > a {
-  color: #fef7e5;
+  color: #fff;
 }
 
 .nav-tabs > li.active > a {
@@ -95,7 +98,7 @@ label {
 }
 
 .menu > li > a {
-  color: #fef7e5 !important;
+  color: #fff !important;
   font-family: "Lato Medium";
   font-size: 13px;
 }
@@ -578,6 +581,10 @@ footer {
   background-color: #e3e4e4;
   border: solid #b6b6b6 1px;
   width: 25%;
+}
+
+.menu_event > li:first-child{
+  border-left: none;
 }
 
 .post_all > li {

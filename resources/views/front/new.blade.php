@@ -14,27 +14,28 @@
             </div>
         @endif
         <input type="hidden" name="user_id" value="{{$user->id}}">
-        <div class="form-group">
-            <label for="title">Titre </label>
-            <input class="form-control form_perso" id="title" type="text" name="title" value="{{old('title')}}">
+        <div class="form-group t_left">
+            <label for="title">Titre:</label>
+            <input class="form-control w33" id="title" type="text" name="title" value="{{old('title')}}">
         </div>
-        <div class="form-group">
-            <label for="date">Date </label>
+        <div class="form-group t_left">
+            <label for="date">Date:</label>
             <input class="form-control w33" id="date " type="date" name="date" placeholder="jj/mm/aaaa">
         </div>
-        <div class="form-group">
-            <label for="abstract">Resumé </label>
-            <input class="form-control form_perso" id="title" type="text" name="abstract" value="{{old('abstract')}}">
+        <div class="form-group t_left">
+            <label for="abstract">Resumé:</label>
+            <input class="form-control w33" id="title" type="text" name="abstract" value="{{old('abstract')}}">
         </div>
         <div class="form-group">
-            <input  name="picture" type="file">
+            <label for="image">Image:</label>
+            <input class="w33"  name="picture" type="file">
             @if($errors->has('picture'))
                 <span class="admin error">{{$errors->first('picture')}}</span>
             @endif
         </div>
-        <div class="form-group">
+        <div class="form-group t_left">
             <label for="category">Category: </label>
-            <select class="form-control form_perso" id="category_id" name="category_id">
+            <select class="form-control w33" id="category_id" name="category_id">
                 <option value="{{null}}"></option>
                 @foreach($categories as $id => $title)
                     <option value="{{$id}}">{{$title}}</option>
@@ -42,7 +43,7 @@
             </select>
         </div>
         <div class="center">
-            <button class="btn btn-default" type="submit">Lancer votre spectavle</button>
+            <button class="btn btn-default" type="submit">Lancer votre spectacle</button>
         </div>
     </div>
 @endsection
